@@ -1,0 +1,89 @@
+/************************************************ TAG SELECTOR ****************************************************************************************/
+/* WARNING: This is External CSS where we make a default CSS file and make changes in it and give link to the
+every html page so that all changes are reflected in all the pages  */
+body {
+  background-color: #F2FFE9;
+  background-image: url(https://images.pexels.com/photos/6775241/pexels-photo-6775241.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-repeat: round;
+  /* NOTE: Play with Background : https://www.w3schools.com/css/css_background.asp */
+  opacity: 1;
+  background-size: cover;
+}
+/* NOTE: We have used CSS syntax here to change some properties syntax is selector(who) {property(what) : value(how);} */
+p {color: #064663;}
+caption {color: #9B0000; font-style: italic; font-size: 20px; border-style: dotted;}
+h4 {color: red;}
+table {
+  color: black;
+  border-width: thin;
+}
+/* li{ display: inline;} */
+img{float: none;}
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #EAEAEA;
+  border-width: 5px;
+  /* WARNING: height: 5px; */
+  width: 5%;
+}
+
+h1 {
+  border-color: #370665;
+  color: black;
+  /* NOTE: text-decoration: underline; but do not underline a text that is not a link it confuses the user  */
+  /* NOTE: text-shadow: 2px 2px black; provided shadow to the text */
+  /* NOTE: text-shadow: 2px 2px 5px red; */
+  /* NOTE: Link to all Text Shadows and Decoration : https://www.w3schools.com/css/css_text_shadow.asp */
+  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px white;
+}
+h3{
+  text-shadow:  0 0 3px #FF0000, 0 0 5px white;
+}
+h2
+{
+  text-shadow:  0 0 3px #FF0000, 0 0 5px white;
+}
+/************************************************************ ClASS Selector ****************************************************/
+/* we use class selectors to specifically change any attribute for a image or any specific tag if we use tag selector it will apply general same functionality for all tags
+so we use class selectors */
+/* NOTE: Classes which initialising with :class_name are pesudo class for example :hover class -> it work whenever we hover the cursour over them */
+.circular{  /* NOTE: we can use that class with .class_name { CSS syntax } */
+  border-radius: 100%;
+ /* NOTE: we have used circular class for all the images to make then circular but we cannot do so with ids */
+}
+.msdhoni{
+   background-color: #3E00FF;
+}
+.heading{
+  color: #3E00FF;
+  font-size: 17px;
+  font-style: italic;
+}
+h1:hover , caption:hover , img:hover , h2:hover , h3:hover , p:hover{
+  background-color: gold;
+}
+a:visited{
+  /* NOTE: For visited links this pesudo class is used */
+  color: green;
+}
+a.ex5:hover, a.ex5:active {
+  text-decoration: underline;
+}
+/* NOTE: Visit https://www.w3schools.com/csSref/sel_visited.asp for more selectors */
+/********************************************************** ID SELECTOR *********************************************************/
+/* NOTE: Id names are unique for each elements whereas class can be same for many elements so where there is unique elements where change is to be made we use id otherwise we use class */
+/* NOTE: we can have two class names for same element but we cannot have more than 1 ids for same element like we do with with msd image above */
+/* NOTE: Due to above reasons it is very rarely Recommended to use ids */
+/*
+#heading {
+  color: #3E00FF;
+  font-size: 17px;
+  font-style: italic;
+}
+#learning {
+  color: red;
+}
+/* NOTE: The above id will be used for these statements in index.html
+  <p id="heading"> I Like to Watch and Play Cricket , Travel and Read Books , I am Very Much Open to <strong><p id="learning">Learning New Things</p></strong></p></td>
+*/

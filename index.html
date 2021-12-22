@@ -12,6 +12,15 @@
   <meta content="This website shows personal information about Lokesh Melkani">
   <!-- title will be name of our website in the browser-->
   <title>Lokesh's Personal Website</title>
+  <!-- WARNING: we can add CSS here inside the head initialising with <style> and writing code for body or whatever we want to modify and this way
+we can combine both CSS and html and get way with the headache of writing same piece of code again and again this is internal CSS  -->
+<link rel="stylesheet" href="css/styles.css">
+<!-- NOTE: We have used external CSS here so that changes are reflected in all pages at once  -->
+<!-- NOTE: /css/styles.css would means / mean root but here we do not have root we have all files at same level  -->
+<!-- NOTE: Inline CSS is preferred more that is if we put a inline css for background color and put external and internal CSS also for a background colour
+our website will respond to inline CSS only if we delete it then it will respond to Internal CSS and then External CSS but it is Recommended to use External CSS-->
+<!-- NOTE: CSS syntax is like : selector {property : value;} where selector is who , property is what , value is how -->
+
 </head>
 <body>
   <table cellspacing="20">
@@ -27,7 +36,7 @@
         <p><strong><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></strong></p>
         <p><strong><a href="Contact.html">Contact Me</a> 📞 : 8178217982 </strong></p>
         <p><strong>Interested in <a href="https://leetcode.com/Lokesh_Melkani/">Programming</a></strong></p>
-        <p>I Like to Watch and Play Cricket , Travel and Read Books , I am Very Much Open to <strong>Learning New Things</strong></p></td>
+        <p class="heading"> I Like to Watch and Play Cricket , Travel and Read Books , I am Very Much Open to <strong>Learning New Things</strong></p></td>
     </tr>
   </table>
   <hr size="1" noshaded>
@@ -111,11 +120,11 @@
   <!-- An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
        The list items will be marked with numbers by default: -->
   <ol>
-    <li><strong>Cricket</strong>
+    <li><p><strong>Cricket</strong></p>
       <ul>
         <h3><strong><em>My Favourite Players ♥ </em></strong></h3>
         <li><p><strong><a href="https://www.instagram.com/mahi7781/">Ms Dhoni</a></strong></p></li>
-        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/319900/319946.png" alt="Image of Ms Dhoni" style="width:300px;height:200px">
+        <img class="circular msdhoni" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/319900/319946.png" alt="Image of Ms Dhoni" style="width:300px;height:200px">
         <br>
         <!-- WARNING: <li><p><strong><a href="https://www.instagram.com/virat.kohli/">Virat Kohli & Dada 💔</a></strong></p></li>
         <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202112/000_13S2CF_0_1200x768.jpeg?aTcPaTbx9oc.6LPFKfCDvKoXp_MXRVyQ&size=770:433" alt="Image of Kohli with his best friend" style="width:300px;height:200px">
@@ -129,13 +138,13 @@
       </ul>
     </li>
     <li><p><strong>Reading</strong></p></li>
-    <img src="https://media.wired.com/photos/5955c3573ff99d6b3a1d165c/master/pass/books.jpg" alt="Readings Image" style="width:300px;height:200px">
+    <img class="circular" src="https://media.wired.com/photos/5955c3573ff99d6b3a1d165c/master/pass/books.jpg" alt="Readings Image" style="width:300px;height:200px">
     <li><p><strong>Learning</strong></p></li>
-    <img src="https://previews.123rf.com/images/rawpixel/rawpixel1603/rawpixel160308149/53554297-learn-learning-education-knowledge-wisdom-studying-concept.jpg" alt="Learning Image" style="width:300px;height:200px">
+    <img class="circular" src="https://previews.123rf.com/images/rawpixel/rawpixel1603/rawpixel160308149/53554297-learn-learning-education-knowledge-wisdom-studying-concept.jpg" alt="Learning Image" style="width:300px;height:200px">
     <li><p><strong>Investing</strong></p></li>
-    <img src="https://www.dummies.com/wp-content/uploads/Investing-concept.jpg" alt="Investing Image" style="width:300px;height:200px">
+    <img class="circular" src="https://www.dummies.com/wp-content/uploads/Investing-concept.jpg" alt="Investing Image" style="width:300px;height:200px">
     <li><p><strong>Travelling</strong></p></li>
-    <img src="https://images.indianexpress.com/2019/07/travelling_759-1.jpg" alt="Travelling Image" style="width:300px;height:200px">
+    <img class="circular" src="https://images.indianexpress.com/2019/07/travelling_759-1.jpg" alt="Travelling Image" style="width:300px;height:200px">
   </ol>
   <hr size="1" noshaded>
   <!-- WARNING:   <h3><strong>My Upanayana Sanskara pics 🙏</strong> </h3>
@@ -145,7 +154,7 @@
     </ul>
     <hr size="1" noshaded> -->
   <h3><strong><a href="Hobbies.html">My Favorite Movies</a></strong></h3>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW-kbu5olj7L_5oWTCHTVlElom9ZqrguVdVQge55_BYt0p-Q3PxcpPQ63DYHkAQG5IocA&usqp=CAU" alt="TVF logo" style="width:300px;height:300px;">
+  <img class="circular" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW-kbu5olj7L_5oWTCHTVlElom9ZqrguVdVQge55_BYt0p-Q3PxcpPQ63DYHkAQG5IocA&usqp=CAU" alt="TVF logo" style="width:300px;height:300px;">
   <hr size="1" noshaded>
 
 </body>
